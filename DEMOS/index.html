@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Error</title>
+	</head>
+	<body>
+		<form method="post" action="#">
+			<input type="file" onchange="uploadFile(this)">
+		</form>
+		<script>
+			function uploadFile(elem){
+				var req = new XMLHttpRequest();
+				
+				var values = new FormData();
+				
+				values.append("file", file.files[0]);
+				
+				req.open("POST", "manage.php", true);
+				req.send(values);
+				/* Req Response */
+				req.onreadystatechange = function(){
+					if(this.readyState == 4 && this.status == 200){
+						console.log(this.responseText);
+					}
+				}
+			}
+			
+			function test(){
+				var values = new FormData();
+				
+				values.append("username","Tseko");
+				
+				console.log(values.getAll("username"));
+			}
+		</script>
+	</body>
+</html>

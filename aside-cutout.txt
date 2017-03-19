@@ -1,0 +1,67 @@
+<!--///////////-->
+		<!-- Asie Menu -->
+		<!--///////////-->
+		<aside class="aside-menu">
+			<div class="profile-bg">
+				<div class="profile-header">
+					<h2>Моят час!</h2>
+				</div>
+				<div class="profile-wrap">
+					<div class="profile-img-big">
+						<img src="https://www.wilsoncenter.org/sites/default/files/styles/450x550-scale-crop/public/18457363298_3ac27e78fb_o.jpg?itok=9nrUxEfI" class="response-img" alt="">
+					</div>
+					<p class="profile-name"><?php echo $inf["user_fname"] . " " . $inf["user_lname"];?></p>
+				</div>
+				<button class="close-menu" onclick="closeMenu();">
+					<span class="icon normal close"></span>
+				</button>
+			</div>
+			<ul class="groups-list">
+				<li>
+					<a href="#page01">Group 1</a>
+				</li>
+				<li>
+					<a href="#page01">Group 2</a>
+				</li>
+				<li>
+					<a href="#page01">Group 3</a>
+				</li>
+				<li>
+					<a href="#page01">Group 3</a>
+				</li>
+			</ul>
+			<!-- Action Buttons in Aside Menu
+			<ul class="actions-list">
+				<li>
+					<div class="tooltipup">
+						<div class="tooltiptext">
+							<div class="tooltiphead">
+								<p>Известия</p>
+							</div>
+							<div class="tooltipcont">
+								<p>С този бутон може да преглеждате своите известия</p>
+							</div>
+						</div>
+						<button class="btn-3">
+							<span class="icon normal notify"></span>
+						</button>
+					</div>
+				</li>
+				<li>
+					<div class="tooltipup">
+						<div class="tooltiptext">
+							<div class="tooltiphead">
+								<p>Докладване на Бъг!</p>
+							</div>
+							<div class="tooltipcont">
+								<p>С този бутон може да докладвате за намерен бъг в приложението или неработеща функционалност</p>
+							</div>
+						</div>
+						<button class="btn-3" onclick="alert('Report');">
+							<span class="icon normal bug"></span>
+						</button>
+					</div>
+				</li>
+			</ul>
+			-->
+		</aside>

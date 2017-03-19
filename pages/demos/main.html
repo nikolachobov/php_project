@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Landing Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style/layout.css">
+		<link rel="stylesheet" type="text/css" href="../style/post.css">
+	</head>
+	<body>
+		<aside class="aside-menu">
+			<div class="profile-bg">
+				<div class="profile-header">
+					<h2>Моят час!</h2>
+				</div>
+				<div class="profile-wrap">
+					<div class="profile-img-big">
+						<img src="https://www.wilsoncenter.org/sites/default/files/styles/450x550-scale-crop/public/18457363298_3ac27e78fb_o.jpg?itok=9nrUxEfI" class="response-img" alt="">
+					</div>
+					<p class="profile-name">Tseko Garkov</p>
+				</div>
+				<button class="close-menu" onclick="closeMenu();">
+					<span class="icon close"></span>
+				</button>
+			</div>
+			<ul class="groups-list">
+				<li>
+					<a href="#page01">Group 1</a>
+				</li>
+				<li>
+					<a href="#page01">Group 2</a>
+				</li>
+				<li>
+					<a href="#page01">Group 3</a>
+				</li>
+				<li>
+					<a href="#page01">Group 3</a>
+				</li>
+			</ul>
+			<ul class="actions-list">
+				<li>
+					<div class="tooltipup">
+						<div class="tooltiptext">
+							<div class="tooltiphead">
+								<p>Известия</p>
+							</div>
+							<div class="tooltipcont">
+								<p>С този бутон може да преглеждате своите известия</p>
+							</div>
+						</div>
+						<button class="btn-3">
+							<span class="icon notify"></span>
+						</button>
+					</div>
+				</li>
+				<li>
+					<div class="tooltipup">
+						<div class="tooltiptext">
+							<div class="tooltiphead">
+								<p>Докладване на Бъг!</p>
+							</div>
+							<div class="tooltipcont">
+								<p>С този бутон може да докладвате за намерен бъг в приложението или неработеща функционалност</p>
+							</div>
+						</div>
+						<button class="btn-3" onclick="alert('Report');">
+							<span class="icon bug"></span>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</aside>
+		<nav>
+			<div class="col-8">
+				<ul class="nav-left">
+					<li>
+						<button class="btn-1" onclick="showMenu();">
+							<span class="icon menu"></span>
+						</button>
+					</li>
+					<li>
+						<h2>Моят час!</h2>
+					</li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<ul class="nav-right">
+					<li>
+						<a href="#hello">
+							<div class="profile-img-small">
+								<img src="https://s.tmimgcdn.com/img/chat-girls/en_4.png" class="response-img" alt="">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="row">
+			<div class="container-md">
+				<div class="posts-header">
+					<button class="btn-4" onclick="alert('Create post');">
+						<span class="icon plus"></span>
+					</button>
+				</div>
+				<div class="posts">
+					<div class="post">
+						<div class="post-head">
+							<div class="col-5">
+								<div class="profile-img-small">
+									<img src="https://s.tmimgcdn.com/img/chat-girls/en_4.png" class="response-img" alt="">
+								</div>
+								<span class="name">Maria Nikolova</span>
+							</div>
+							<div class="col-5">
+								<span style="margin-right: 10px;">Публикувано в група <a href="#group">Коли</a></span>
+								<span>18.2.2017</span>
+							</div>
+						</div>
+						<div class="post-cont">
+							<div class="post-review">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque, tellus eu maximus ornare, odio est rhoncus risus, in egestas dolor sapien nec sem. Nulla facilisi. Integer sagittis ex non elit tempor</p>
+							</div>
+							<img src="http://roa.h-cdn.co/assets/15/09/980x490/gallery_nrm_1424785047-15c118_026.jpg" class="response-img" alt="">
+						</div>
+						<div class="post-actions">
+							<div class="row">
+								<div class="col-10">
+									<ul>
+										<li>
+											<a href="#visit" class="btn-2">
+												<span class="icon like"></span>
+											</a>
+											<span class="count">10</span>
+										</li>
+										<li>
+											<a href="#visit" class="btn-2">
+												<span class="icon comment"></span>
+											</a>
+											<span class="count">200</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="post-comments">
+							<div class="comment-box">
+								<!-- Profile img -->
+								<div class="col-2">
+									<div class="profile-img-small">
+										<img src="https://www.wilsoncenter.org/sites/default/files/styles/450x550-scale-crop/public/18457363298_3ac27e78fb_o.jpg?itok=9nrUxEfI" class="response-img" alt="">
+									</div>
+								</div>
+								<!-- Comment -->
+								<div class="col-8">
+									<span><b>Tsvetoslav Garkov:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque, tellus eu maximus ornare, odio est rhoncus risus, in egestas dolor sapien nec sem. Nulla facilisi. Integer sagittis ex non elit tempor</span>
+								</div>
+							</div>
+							<hr class="devider">
+							<div class="comment-box">
+								<!-- Profile img -->
+								<div class="col-2">
+									<div class="profile-img-small">
+										<img src="https://www.wilsoncenter.org/sites/default/files/styles/450x550-scale-crop/public/18457363298_3ac27e78fb_o.jpg?itok=9nrUxEfI" class="response-img" alt="">
+									</div>
+								</div>
+								<!-- Comment -->
+								<div class="col-8">
+									<span><b>Tsvetoslav Garkov:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque, tellus eu maximus ornare, odio est rhoncus risus, in egestas dolor sapien nec sem. Nulla facilisi. Integer sagittis ex non elit tempor</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="posts-footer">
+					<div class="row">
+						<div class="col-1">
+							<a href="#main" class="btn-1">
+								<span class="icon up"></span>
+							</a>
+						</div>
+						<div class="col-9">
+							<p>Няма повече публикации</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function closeMenu(){
+				document.getElementsByClassName("aside-menu")[0].style.left = "-30%";
+			}
+			
+			function showMenu(){
+				document.getElementsByClassName("aside-menu")[0].style.left = "0";
+			}
+		</script>
+	</body>
+</html>

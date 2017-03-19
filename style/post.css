@@ -1,0 +1,622 @@
+/* Navigation Style */
+
+.main-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	padding: 1% 2%;
+	background: #f4f8ff;
+	box-sizing: border-box;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	z-index: 2;
+}
+
+.nav-left{
+	text-align: left;
+}
+
+.nav-left > li{
+	margin-right: 15px;
+	line-height: 50px;
+	color: #0288D1;
+}
+
+.nav-right{
+	text-align: right;
+}
+
+.nav-right > li{
+	margin-left: 15px;
+	line-height: 50px;
+	color: #0288D1;
+}
+
+/* Profile Img Wrap */
+
+.profile-img-small, .profile-img-big, .profile-img-md{
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.profile-img-small{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.profile-img-big{
+	width: 150px;
+	height: 150px;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	border-radius: 130px;
+}
+
+.profile-img-md{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	border-radius: 130px;
+}
+
+.post-author{
+	display: inline-block;
+	margin-left: 15px;
+	color: #616161;
+}
+
+/* Create Post */
+
+.posts-header{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.posts-footer{
+	width: 100%;
+	padding: 2% 4%;
+	text-align: center;
+	background: #fff;
+	color: #616161;
+	line-height: 50px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+/* Posts */
+
+.posts{
+	width: 100%;
+	height: auto;
+	margin: 2% 0;
+}
+
+/* Loader Style */
+
+.posts .loader-wrap{
+	width: 100%;
+	heigth: auto;
+	padding: 2% 0;
+	background: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.loader-wrap .loader{
+	width: 90px;
+	height: 90px;
+	margin: 2% auto;
+	border-radius: 100px;
+	border: 5px solid #FFB74D;
+	border-top: 5px solid #0288D1;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+	from {transform: rotate(0)}
+    to {transform: rotate(360deg)}
+}
+
+.loader-wrap p{
+	padding: 2% 0;
+	text-align: center;
+	color: #444;
+}
+
+/* Post Box */
+
+.post{
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+	background: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+/* No posts */
+
+.no-posts{
+	width: 100%;
+	height: auto;
+	padding: 2% 0;
+	color: #616161;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Post Head */
+
+.post-head{
+	padding: 2% 4%;
+	overflow-y: auto;
+	background: #FAFAFA;
+	color: #616161;
+	line-height: 50px;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+/* Post Content Wrap */
+
+.post-cont{
+	width: 100%;
+	height: auto;
+	padding: 2% 0;
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+/* This is the post text Wrapper called review */
+
+.post-review{
+	font-size: 2em;
+	padding: 0 2%;
+	box-sizing: border-box;
+}
+
+/* Post Actions Buttons */
+
+.post-actions{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 2% 4%;
+	background: #FAFAFA;
+	border-top: 1px solid #E0E0E0;
+	box-sizing: border-box;
+}
+
+/* Likes Comments Count */
+
+.count{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	color: #0288D1;
+	font-size: 16px;
+}
+
+.post-actions li{
+	margin-right: 15px;
+}
+
+/* Comment Section Style */
+
+.comment-post{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 3% 10%;
+	background: #FAFAFA;
+	border-top: 1px solid #E0E0E0;
+	box-sizing: border-box;
+}
+
+.comment-wrap{
+	width: 100%;
+	height: auto;
+	padding: 2%;
+	overflow-y: auto;
+}
+
+.profile-photo{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 5px auto;
+	border-radius: 45px;
+	background: #E0E0E0;
+}
+
+.comment-wrap textarea{
+	display: block;
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 16px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	box-sizing: border-box;
+	border: 1px solid #E0E0E0;
+	resize: none;
+}
+
+.comment-wrap .submit:hover{
+	background: #EF6C00;
+}
+
+/* Post Comments */
+
+.post-comments{
+	box-sizing: border-box;
+}
+
+.post-comments > p{
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.comments{
+	padding-top: 2%;
+}
+
+/* Comment Wrap */
+
+.comment-box{
+	height: auto;
+	margin: auto;
+	padding: 4% 2%;
+	border-radius: 3px;
+	overflow-y: auto;
+}
+
+/* Buttons */
+
+/* Orange Not filled Round Button */
+
+.btn-1{
+	position: relative;
+	display: inline-block;
+	min-width: 50px;
+	min-height: 50px;
+	width: 50px;
+	height: 50px;
+	color: #0288D1;
+	border: 1px solid #0288D1;
+	border-radius: 50px;
+	vertical-align: middle;
+	transition: .3s background ease;
+}
+
+.btn-1:hover{
+	background: #0288D1;
+	color: #fff;
+}
+
+/* Orange Filled Round Button */
+
+.btn-2{
+	position: relative;
+	display: inline-block;
+	min-width: 50px;
+	min-height: 50px;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	background: #0288D1;
+	border-radius: 50px;
+	vertical-align: middle;
+	transition: .3s box-shadow ease;
+}
+
+.btn-2:hover{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+}
+
+/* White Not filled Round Button */
+
+.btn-3{
+	position: relative;
+	display: inline-block;
+	min-width: 50px;
+	min-height: 50px;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	vertical-align: middle;
+	transition: .3s background ease;
+}
+
+.btn-3:hover{
+	background: #fff;
+	color: #0288D1;
+}
+
+/* Full Width Orange Filled Button */
+
+.btn-4{
+	position: relative;
+	display: inline-block;
+	min-width: 100%;
+	min-height: 50px;
+	width: 100%;
+	height: 50px;
+	background: #0288D1;
+	color: #fff;
+	border-radius: 3px;
+	vertical-align: middle;
+	transition: .3s box-shadow ease;
+}
+
+.btn-4:hover{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+}
+
+/* Small Rounded Button */
+
+.btn-7{
+	float: right;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #0288D1;
+	border: 1px solid #0288D1;
+	border-radius: 3px;
+	transition: .2s background ease, .2s color ease;
+}
+
+.btn-7:hover{
+	color: #0288D1;
+	background: #fff;
+}
+
+/* Hide Nav Button */
+
+.close-menu{
+	position: absolute;
+	bottom: -25px;
+	left: calc(95% - 50px);
+	display: inline-block;
+	min-width: 50px;
+	min-height: 50px;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	background: #4527A0;
+	border-radius: 50px;
+	vertical-align: middle;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	transition: .2s transform ease;
+}
+
+.close-menu:hover{
+	transform: scale(1.30);
+}
+
+/* Response Img */
+
+.response-img{
+	max-width: 100%;
+	min-width: 100%;
+}
+
+/* Custom CSS */
+
+/* Aside Menu */
+
+.aside-menu{
+	position: fixed;
+	top: 0;
+	left: -30%;
+	width: 30%;
+	height: 100%;
+	background: #fff;
+	transition: .5s left ease;
+	z-index: 3;
+}
+
+.groups-list{
+	width: 100%;
+	height: auto;
+	padding: 10% 5%;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+.groups-list li{
+	display: block;
+}
+
+.groups-list a{
+	display: block;
+	padding: 4% 8%;
+	opacity: .65;
+	color: #000;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+.groups-list a:hover{
+	opacity: 1;
+	border-color: #F57C00;
+	background: #EEEEEE;
+}
+
+/* Actions List */
+
+.actions-list{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 2% 4%;
+	text-align: center;
+	background: #0288D1;
+	box-sizing: border-box;
+}
+
+.actions-list li{
+	margin: 0 10px; 
+}
+
+.profile-bg{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	overflow: visible;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.profile-bg::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(245,124,0, 1);
+	z-index: -1;
+}
+
+.profile-header{
+	width: 100%;
+	padding: 1% 0;
+	color: #fff;
+	border-bottom: 2px solid rgba(255,255,255, .3);
+	line-height: 50px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.profile-wrap{
+	width: 100%;
+	height: auto;
+	padding: 5% 0;
+	display: block;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.profile-wrap .profile-name{
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/********************************/
+
+/* Tooltip container */
+.tooltipup, .tooltipdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltipup .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 3px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 135%;
+    left: 50%;
+    margin-left: -100px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: 1s opacity ease;
+	overflow: hidden;
+}
+
+.tooltipdown .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 3px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 135%;
+    left: 50%;
+    margin-left: -100px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: 1s opacity ease;
+	overflow: hidden;
+}
+
+.tooltiptext .tooltiphead{
+	width: 100%;
+	height: auto;
+	padding: 10px 5px;
+	background: #4527A0;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	box-sizing: border-box;
+}
+
+.tooltiptext .tooltipcont{
+	width: 100%;
+	height: auto;
+	padding: 10px 5px;
+	color: #444;
+	text-align: left;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .3);
+	box-sizing: border-box;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipup:hover .tooltiptext, .tooltipdown:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Devider */
+
+.devider{
+	display: block;
+	min-height: 1px;
+	background: #E0E0E0;
+	margin: 2% 0;
+	border: 0;
+}
+
+@media only screen and (max-width: 1000px){
+	.post-head .col-5:nth-child(2){
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+}

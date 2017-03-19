@@ -1,0 +1,120 @@
+/* Main Font Family Insert */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Reset */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #F5F5F5; 
+	font-family: Arial;
+}
+
+input,fieldset,button,textarea,select{
+	border: 0;
+	outline: 0;
+	background: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	display: inline-block;
+	vertical-align: top;
+}
+
+a{
+	text-decoration: none;
+	color: #0288D1;
+}
+
+
+/* Cols */
+
+.col-1{
+	width: 10%;
+}
+
+.col-2{
+	width: 20%;
+}
+
+.col-3{
+	width: 30%;
+}
+
+.col-4{
+	width: 40%;
+}
+
+.col-5{
+	width: 50%;
+}
+
+.col-6{
+	width: 60%;
+}
+
+.col-7{
+	width: 70%;
+}
+
+.col-8{
+	width: 80%;
+}
+
+.col-9{
+	width: 90%;
+}
+
+.col-10{
+	width: 100%;
+}
+
+.col-1, 
+.col-2, 
+.col-3, 
+.col-4, 
+.col-5, 
+.col-6, 
+.col-7, 
+.col-8, 
+.col-9,
+.col-10{
+	float: left;
+	position: relative;
+	min-height: 1px;
+	box-sizing: border-box;
+}
+
+/* Row */
+
+.row::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Container */
+
+.container-md{
+	width: 50%;
+	height: auto;
+	margin: auto;
+	padding: 10% 0 5%;
+}
+
+/* Mobile Style */
+
+@media only screen and (max-width: 1000px){
+	.container-md{
+		padding: 20% 0 5%;
+		width: 90%;
+	}
+}

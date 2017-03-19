@@ -1,0 +1,12 @@
+/* Developer Style */
+
+.developer-box{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 5% 2%;
+	background: #616161;
+	color: #fff;
+}

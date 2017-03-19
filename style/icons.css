@@ -1,0 +1,149 @@
+/* Import Icons Font */
+
+@font-face {
+  font-family: 'option';
+  src: url('../font/option.eot?96091364');
+  src: url('../font/option.eot?96091364#iefix') format('embedded-opentype'),
+       url('../font/option.woff2?96091364') format('woff2'),
+       url('../font/option.woff?96091364') format('woff'),
+       url('../font/option.ttf?96091364') format('truetype'),
+       url('../font/option.svg?96091364#option') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Icons */
+
+.icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-style: normal;
+	table-layout: fixed;
+}
+
+/* Icons */
+
+.small{
+	font-size: 16px;
+}
+
+.normal{
+	font-size: 20px;
+}
+
+.big{
+	font-size: 30px;
+}
+
+.like::after, .comment::after, .notify::after, .menu::after, .close::after, .bug::after, .plus::after, .up::after, .down::after, .chat::after, .share::after, .help::after, .person::after, .power::after, .user::after, .settings::after, .photo::after, .home::after, .video::after, .play::after, .pause::after, .volume-up::after, .volume-down::after, .volume-off::after, .replay::after{
+	display: table-cell;
+	text-align: center;
+	font-style: normal;
+	font-family: 'option';
+	vertical-align: middle;
+}
+
+.like::after{
+	content: '\f164';
+}
+
+.comment::after{
+	content: '\e800';
+}
+
+.notify::after{
+	content: '\f0f3';
+}
+
+.menu::after{
+	content: '\f0c9';
+}
+
+.close::after{
+	content: '\e801';
+}
+
+.bug::after{
+	content: '\f188';
+}
+
+.plus::after{
+	content: '\e802';
+}
+
+.up::after{
+	content: '\e803';
+}
+
+.down::after{
+	content: '\e804';
+}
+
+.chat::after{
+	content: '\f03d';
+}
+
+.share::after{
+	content: '\e805';
+}
+
+.help::after{
+	content: '\f128';
+}
+
+.person::after{
+	content: '\f1ae';
+}
+
+.power::after{
+	content: '\e806';
+}
+
+.user::after{
+	content: '\e808';
+}
+
+.settings::after{
+	content: '\e807';
+}
+
+.photo::after{
+	content: '\e809';
+}
+
+.video::after{
+	content: '\e80b';
+}
+
+.home::after{
+	content: '\e80a';
+}
+
+.play::after{
+	content: '\e80c';
+}
+
+.pause::after{
+	content: '\e80d';
+}
+
+.volume-up::after{
+	content: '\e80e';
+}
+
+.volume-down::after{
+	content: '\e811';
+}
+
+.volume-off::after{
+	content: '\e80f';
+}
+
+.replay::after{
+	content: '\e810';
+}

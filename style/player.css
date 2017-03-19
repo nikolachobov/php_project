@@ -1,0 +1,117 @@
+/* Video Wrap */
+
+.videoWrap{
+	width: 70%;
+	height: 150px;
+	margin: 5% auto;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 10px 0 rgba(0,0,0, .5);
+	overflow: hidden;
+}
+
+.videoCont{
+	position: relative;
+	float: left;
+	width: 30%;
+	height: 100%;
+	background: #0288D1;
+	color: #fff;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.videoActions{
+	position: relative;
+	float: left;
+	width: 70%;
+	height: 100%;
+	padding: 0 5%;
+	box-sizing: border-box;
+}
+
+.videoActions h3{
+	font-size: 18px;
+}
+
+/* Styling the range */
+
+.videoActions input[type="range"]{
+	display: block;
+	margin: 15px 0;
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	-webkit-appearance: none;
+	background-color: #0288D1;
+	outline: 0;
+}
+
+.videoActions input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+	border: 1px solid #0288D1;
+    background: #fff;
+}
+
+
+/* Action Buttons */
+
+.videoActions ul{
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.videoActions li{
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: middle;
+}
+
+.videoActions li button{
+	opacity: .7;
+	position: relative;
+	color: #FB8C00;
+	cursor: pointer;
+}
+
+.videoActions li button:hover{
+	opacity: 1;
+}
+
+.big-btn{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+}
+
+.small-btn{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+}
+
+/* Actions Wrap Style */
+
+.innerAct{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: auto;
+	color: #616161;
+}
+
+/* Audio element style */
+
+.music{
+	display: none;
+}
+
